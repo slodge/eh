@@ -1,25 +1,25 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone.6.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="storyb/Core/RootViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="storyb/RootViewController.cs">
     <Files>
       <File FileName="storyb/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="storyb/Main.cs" Line="13" Column="1" />
-      <File FileName="storyb/RootViewController.cs" Line="49" Column="47" />
-      <File FileName="storyb/DetailViewController.cs" Line="24" Column="1" />
-      <File FileName="storyb/StandardTableViewCell.cs" Line="17" Column="1" />
+      <File FileName="storyb/Main.cs" Line="1" Column="1" />
+      <File FileName="storyb/RootViewController.cs" Line="40" Column="23" />
+      <File FileName="storyb/DetailViewController.cs" Line="18" Column="1" />
+      <File FileName="storyb/StandardTableViewCell.cs" Line="1" Column="1" />
       <File FileName="storyb/DetailViewController.designer.cs" Line="1" Column="1" />
       <File FileName="storyb/Core/DetailViewModel.cs" Line="1" Column="1" />
       <File FileName="storyb/Core/Menu.cs" Line="1" Column="1" />
-      <File FileName="storyb/Core/RootViewModel.cs" Line="25" Column="30" />
+      <File FileName="storyb/Core/RootViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="storyb" expanded="True">
             <Node name="References" expanded="True" />
-            <Node name="Core" expanded="True">
-              <Node name="RootViewModel.cs" selected="True" />
-            </Node>
+            <Node name="Core" expanded="True" />
+            <Node name="DetailViewController.cs" expanded="True" />
+            <Node name="MainStoryboard.storyboard" selected="True" />
           </Node>
         </State>
       </Pad>

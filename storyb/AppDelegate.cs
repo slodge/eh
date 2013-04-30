@@ -41,36 +41,12 @@ namespace storyb
 		{
 		}
 
-		public class Presenter : IMvxTouchViewPresenter
-		{
-			#region IMvxTouchModalHost implementation
-			public bool PresentModalViewController (UIViewController controller, bool animated)
-			{
-				throw new NotImplementedException ();
-			}
-			public void NativeModalViewControllerDisappearedOnItsOwn ()
-			{
-				throw new NotImplementedException ();
-			}
-			#endregion
-			#region IMvxViewPresenter implementation
-			public void Show (Cirrious.MvvmCross.ViewModels.MvxViewModelRequest request)
-			{
-				throw new NotImplementedException ();
-			}
-			public void ChangePresentation (Cirrious.MvvmCross.ViewModels.MvxPresentationHint hint)
-			{
-				throw new NotImplementedException ();
-			}
-			#endregion
-		}
-
 		public override void FinishedLaunching (UIApplication application)
 		{
 			// NOTE: Don't call the base implementation on a Model class
 			// see http://docs.xamarin.com/ios/tutorials/Events%2c_Protocols_and_Delegates 
 
-			var setup = new Setup(this, new Presenter());
+			var setup = new Setup(this, new MvxTouchViewPresenter(this, Window));
 			setup.Initialize();
 		}
 		

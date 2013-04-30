@@ -125,6 +125,7 @@
     <Compile Include="Core\DetailViewModel.cs" />
     <Compile Include="Core\RootViewModel.cs" />
     <Compile Include="Core\Menu.cs" />
+    <Compile Include="Setup.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard.storyboard" />

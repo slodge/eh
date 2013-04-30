@@ -10,19 +10,6 @@ using Cirrious.MvvmCross.ViewModels;
 
 namespace storyb
 {
-	public class Setup : MvxTouchSetup
-	{
-		public Setup (MvxApplicationDelegate deleg, IMvxTouchViewPresenter presenter)
-			: base(deleg, presenter)
-		{
-		}
-
-		protected override IMvxApplication CreateApp ()
-		{
-			return new App();
-		}
-	}
-
 	public class Application
 	{
 		// This is the main entry point of the application.

@@ -16,16 +16,6 @@ namespace storyb
 		public RootViewController (IntPtr handle) : base (handle)
 		{
 			Title = NSBundle.MainBundle.LocalizedString ("Master", "Master");
-
-			// Custom initialization
-		}
-		
-		public override void DidReceiveMemoryWarning ()
-		{
-			// Releases the view if it doesn't have a superview.
-			base.DidReceiveMemoryWarning ();
-			
-			// Release any cached data, images, etc that aren't in use.
 		}
 		
 		public override void ViewDidLoad ()
@@ -46,7 +36,8 @@ namespace storyb
 			if (segue.Identifier == "showDetail") {
 				var indexPath = TableView.IndexPathForSelectedRow;
 				var menu = (ViewModel as RootViewModel).Items[indexPath.Row];
-				DetailViewController.SetNextViewController(new DetailViewModel() { Menu = menu });
+				var nextViewController = segue.DestinationViewController as DetailViewController;
+				nextViewController.Request = new MvxViewModelInstanceRequest(new DetailViewModel() { Menu = menu });
 			}
 		}
 	}
